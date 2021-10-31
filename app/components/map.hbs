@@ -1,0 +1,10 @@
+<div class="map">
+  <img
+    alt="Map image at coordinates {{@lat}},{{@lng}}"
+    ...attributes 
+    {{!-- ...alt is passed before ...attributes so that it can be replaced. Any attritube before ...attributes are default values and could be overriden at the component calling --}}
+    src="{{this.src}}"
+    width={{@width}}
+    height={{@height}}
+  />
+</div>
